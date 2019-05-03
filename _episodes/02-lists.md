@@ -21,7 +21,7 @@ list[2:9]), in the same way as strings and arrays."
 ---
 
 In the previous episode, we analyzed a single file with inflammation data. Our goal, however, is to
-process all inflammation data we've got, which means that we still have eleven more files to go! 
+process all inflammation data we've got, which means that we still have eleven more files to go!
 
 The natural first step is to collect the names of all the files that we have to process. In Python,
 a list is a way to store multiple values together. In this episode, we will learn how to store
@@ -46,15 +46,40 @@ odds are: [1, 3, 5, 7]
 ~~~
 {: .output}
 
-We select individual elements from lists by indexing them:
+We can access elements of a list using indices -- numbered positions of elements in the list.
+These positions are numbered starting at 0, so the first element has an index of 0.
 
 ~~~
-print('first and last:', odds[0], odds[-1])
+print('first element:', odds[0])
+print('last element:', odds[3])
+print('"-1" element:', odds[-1])
 ~~~
 {: .language-python}
 
 ~~~
-first and last: 1 7
+first element: 1
+last element: 7
+"-1" element: 7
+~~~
+{: .output}
+
+Yes, we can use negative numbers as indices in Python. When we do so, the index `-1` gives us the
+last element in the list, `-2` the second to last, and so on.
+Because of this, `odds[3]` and `odds[-1]` point to the same element here.
+
+If we loop over a list, the loop variable is assigned elements one at a time:
+
+~~~
+for number in odds:
+    print(number)
+~~~
+{: .language-python}
+
+~~~
+1
+3
+5
+7
 ~~~
 {: .output}
 
@@ -208,6 +233,7 @@ does not.
 > ~~~
 > sample_ages = [10, 12.5, 'Unknown']
 > ~~~
+> {: .language-python}
 {: .callout}
 
 There are many ways to change the contents of lists besides assigning new values to
@@ -323,10 +349,10 @@ last: 4
 >
 > ~~~
 > string_for_slicing = "Observation date: 02-Feb-2013"
-> list_for_slicing = [["fluorine", "F"], 
->                     ["chlorine", "Cl"], 
->                     ["bromine", "Br"], 
->                     ["iodine", "I"], 
+> list_for_slicing = [["fluorine", "F"],
+>                     ["chlorine", "Cl"],
+>                     ["bromine", "Br"],
+>                     ["iodine", "I"],
 >                     ["astatine", "At"]]
 > ~~~
 > {: .language-python}
@@ -341,6 +367,8 @@ last: 4
 > the length of the string or list
 > (e.g. if you wanted to apply the solution to a set of lists of different lengths)?
 > If not, try to change your approach to make it more robust.
+>
+> Hint: Remember that indices can be negative as well as positive
 >
 > > ## Solution
 > > Use negative indices to count elements from the end of a container (such as list or string):

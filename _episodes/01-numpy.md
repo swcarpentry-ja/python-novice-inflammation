@@ -115,7 +115,7 @@ weight in kilograms: 60.0
 ~~~
 {: .output}
 
-Moreover, we can do arithmetics with variables right inside the `print` function:
+Moreover, we can do arithmetic with variables right inside the `print` function:
 
 ~~~
 print('weight in pounds:', 2.2 * weight_kg)
@@ -948,8 +948,8 @@ the graphs will actually be squeezed together more closely.)
 >
 > > ## Solution
 > > ~~~
-> > []
-> > []
+> > array([], shape=(0, 0), dtype=float64)
+> > array([], shape=(0, 40), dtype=float64)
 > > ~~~
 > > {: .output}
 > {: .solution}

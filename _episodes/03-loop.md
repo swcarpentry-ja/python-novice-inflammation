@@ -141,7 +141,7 @@ The general form of a loop is:
 
 ~~~
 for variable in collection:
-    do things using variable
+    # do things using variable, such as print
 ~~~
 {: .language-python}
 
@@ -263,10 +263,10 @@ so we should always use it when we can.
 
 > ## From 1 to N
 >
-> Python has a built-in function called `range` that creates a sequence of numbers. `range` can
+> Python has a built-in function called `range` that generates a sequence of numbers. `range` can
 > accept 1, 2, or 3 parameters.
 >
-> * If one parameter is given, `range` creates an array of that length,
+> * If one parameter is given, `range` generates a sequence of that length,
 >   starting at zero and incrementing by 1.
 >   For example, `range(3)` produces the numbers `0, 1, 2`.
 > * If two parameters are given, `range` starts at
@@ -274,7 +274,7 @@ so we should always use it when we can.
 >   For example, `range(2, 5)` produces `2, 3, 4`.
 > * If `range` is given 3 parameters,
 >   it starts at the first one, ends just before the second one, and increments by the third one.
->   For exmaple `range(3, 10, 2)` produces `3, 5, 7, 9`.
+>   For example, `range(3, 10, 2)` produces `3, 5, 7, 9`.
 >
 > Using `range`,
 > write a loop that uses `range` to print the first 3 natural numbers:
@@ -294,6 +294,35 @@ so we should always use it when we can.
 > > {: .language-python}
 > {: .solution}
 {: .challenge}
+
+
+
+
+> ## Understanding the loops
+>
+> Given the following loop:
+> ~~~
+> word = 'oxygen'
+> for char in word:
+>     print(char)
+> ~~~
+> {: .python}
+>
+> How many times is the body of the loop executed?
+>
+> * 3 times
+> * 4 times
+> * 5 times
+> * 6 times
+>
+> > ## Solution
+> >
+> > The body of the loop is executed 6 times.
+> >
+> {: .solution}
+{: .challenge}
+
+
 
 > ## Computing Powers With Loops
 >
