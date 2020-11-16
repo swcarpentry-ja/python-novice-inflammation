@@ -1,7 +1,8 @@
 ---
 layout: reference
-permalink: /reference/
+Title: "Reference"
 root: ..
+permalink: /reference/
 ---
 
 ## Glossary

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Setup
-permalink: /setup/
 root: ..
+permalink: /setup/
 ---
 
 ### Obtain lesson materials
