@@ -29,8 +29,8 @@ Any Python interpreter can be used as a calculator:
 
 This is great but not very interesting.
 To do anything useful with data, we need to assign its value to a _variable_.
-In Python, we can [assign]({{ page.root }}/reference/#assign) a value to a
-[variable]({{ page.root }}/reference/#variable), using the equals sign `=`.
+In Python, we can [assign]({{ page.root }}/reference.html#assign) a value to a
+[variable]({{ page.root }}/reference.html#variable), using the equals sign `=`.
 For example, to assign value `60` to a variable `weight_kg`, we would execute:
 
 ~~~
@@ -45,7 +45,7 @@ In Python, variable names:
 
  - can include letters, digits, and underscores
  - cannot start with a digit
- - are [case sensitive]({{ page.root }}/reference/#case-sensitive).
+ - are [case sensitive]({{ page.root }}/reference.html#case-sensitive).
 
 This means that, for example:
  - `weight0` is a valid variable name, whereas `0weight` is not
@@ -157,7 +157,8 @@ weight in kilograms is now: 65.0
 > ~~~
 > {: .output}
 >
-> ![Value of 65.0 with weight_kg label stuck on it, and value of 143.0 with weight_lb label stuck on it](../fig/python-sticky-note-variables-02.svg)
+> ![Value of 65.0 with weight_kg label stuck on it, and value of 143.0 with weight_lb label
+stuck on it](../fig/python-sticky-note-variables-02.svg)
 >
 > Let's now change `weight_kg`:
 >
@@ -172,7 +173,8 @@ weight in kilograms is now: 65.0
 > ~~~
 > {: .output}
 >
-> ![Value of 100.0 with label weight_kg stuck on it, and value of 143.0 with label weight_lb stuck on it](../fig/python-sticky-note-variables-03.svg)
+> ![Value of 100.0 with label weight_kg stuck on it, and value of 143.0 with label weight_lb
+stuck on it](../fig/python-sticky-note-variables-03.svg)
 >
 > Since `weight_lb` doesn't "remember" where its value comes from,
 > it is not updated when we change `weight_kg`.
@@ -181,21 +183,23 @@ weight in kilograms is now: 65.0
 
 > ## Check Your Understanding
 >
-> What values do the variables `mass` and `age` have after each statement in the following program?
-> Test your answers by executing the commands.
+> What values do the variables `mass` and `age` have after each of the following statements?
+> Test your answer by executing the lines.
 >
 > ~~~
 > mass = 47.5
 > age = 122
 > mass = mass * 2.0
 > age = age - 20
-> print(mass, age)
 > ~~~
 > {: .language-python}
 >
 > > ## Solution
 > > ~~~
-> > 95.0 102
+> > `mass` holds a value of 47.5, `age` does not exist
+> > `mass` still holds a value of 47.5, `age` holds a value of 122
+> > `mass` now has a value of 95.0, `age`'s value is still 122
+> > `mass` still has a value of 95.0, `age` now holds 102
 > > ~~~
 > > {: .output}
 > {: .solution}
