@@ -1,5 +1,6 @@
 ---
 title: Setup
+Title: Setup
 root: ..
 permalink: /setup/
 ---
