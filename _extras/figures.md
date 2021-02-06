@@ -1,4 +1,1 @@
----
-layout: page
-title: Figures
----
+---\nlayout: page\ntitle: Figures\n---
